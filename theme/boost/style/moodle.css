@@ -10576,7 +10576,9 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 .choosercontainer #chooseform .moduletypetitle {
   text-transform: uppercase;
   padding-top: 1.2em;
-  padding-bottom: 0.4em; }
+  padding-bottom: 0.4em;
+  margin-bottom: 0.5rem;
+  font-size: 100%; }
 
 .choosercontainer #chooseform .option .typename,
 .choosercontainer #chooseform .nonoption .typename {
@@ -10652,7 +10654,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
  */
 .modchooser .modal-body {
   padding: 0;
-  height: 590px;
+  height: 640px;
   overflow-y: auto; }
   .modchooser .modal-body .loading-icon {
     opacity: 1; }
@@ -10698,11 +10700,10 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   overflow-x: hidden; }
   .modchoosercontainer .optionscontainer .option,
   .modchoosercontainer .searchresultitemscontainer .option {
-    flex-basis: 16%; }
+    flex-basis: 16.66%; }
     .modchoosercontainer .optionscontainer .option .optionactions .optionaction,
     .modchoosercontainer .searchresultitemscontainer .option .optionactions .optionaction {
       cursor: pointer;
-      margin: 0.2rem;
       color: #868e96; }
       .modchoosercontainer .optionscontainer .option .optionactions .optionaction i,
       .modchoosercontainer .searchresultitemscontainer .option .optionactions .optionaction i {
@@ -10713,9 +10714,6 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
       .modchoosercontainer .optionscontainer .option .optioninfo a:hover,
       .modchoosercontainer .searchresultitemscontainer .option .optioninfo a:hover {
         text-decoration: none; }
-      .modchoosercontainer .optionscontainer .option .optioninfo a .optionname,
-      .modchoosercontainer .searchresultitemscontainer .option .optioninfo a .optionname {
-        margin-top: 0.5em; }
       .modchoosercontainer .optionscontainer .option .optioninfo a .optionicon .icon,
       .modchoosercontainer .searchresultitemscontainer .option .optioninfo a .optionicon .icon {
         margin: 0;
@@ -10728,8 +10726,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
   background-color: #fff;
   overflow-x: hidden;
   overflow-y: auto;
-  line-height: 2em;
-  height: 590px; }
+  height: 640px; }
   .modchooser .modal-body .optionsummary .content {
     overflow-y: auto; }
     .modchooser .modal-body .optionsummary .content .heading .icon {
@@ -14917,11 +14914,7 @@ a.ygtvspacer:hover {
 
 body.path-question-type {
   /* Hacks to display the labels within a form group. */ }
-  body.path-question-type .fitem_fgroup .accesshide {
-    font: inherit;
-    position: static;
-    padding-right: .3em; }
-  body.path-question-type .form-group .sr-only {
+  body.path-question-type .form-group .sr-only:not(legend) {
     position: static;
     width: auto;
     height: auto;
@@ -15005,13 +14998,6 @@ body.path-question-type {
 .que.multichoice .answer div.r0 .icon.fa-remove,
 .que.multichoice .answer div.r1 .icon.fa-remove {
   text-indent: 0; }
-
-.qtype_multichoice_clearchoice {
-  padding-top: 10px; }
-  .qtype_multichoice_clearchoice a {
-    cursor: pointer;
-    text-decoration: underline;
-    padding-left: 30px; }
 
 .formulation input[type="text"],
 .formulation select {
